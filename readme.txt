@@ -4,7 +4,7 @@ Tags: elementor, button, seo, accessibility, schema, json-ld, aria, wcag
 Requires at least: 5.9
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Adds SEO and accessibility enhancements to Elementor Button widgets — Schema.o
 
 == Description ==
 
-Elementor Button SEO adds a new **"Button SEO & Accessibility"** section to the **Advanced tab** of every Elementor Button widget. This plugin piggybacks on Elementor — no custom widgets needed.
+Elementor Button SEO adds a new **"Button SEO & Accessibility"** section to the **Content tab** of every Elementor Button widget. This plugin piggybacks on Elementor — no custom widgets needed.
 
 **Features:**
 
@@ -38,7 +38,7 @@ This plugin lets you add descriptive `aria-label` and `title` attributes to ever
 
 1. Upload the plugin files to `/wp-content/plugins/elementor-button-seo/` or install through the WordPress plugins screen
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Edit any page with Elementor, click a Button widget, go to the **Advanced** tab
+3. Edit any page with Elementor, click a Button widget, go to the **Content** tab
 4. Find the **"Button SEO & Accessibility"** section and toggle it on
 
 == Frequently Asked Questions ==
@@ -47,7 +47,7 @@ This plugin lets you add descriptive `aria-label` and `title` attributes to ever
 No, it works with the free version of Elementor.
 
 = Does this add a new widget? =
-No, it extends the existing Elementor Button widget by adding a new section to its Advanced tab.
+No, it extends the existing Elementor Button widget by adding a new section to its Content tab.
 
 = Will this slow down my site? =
 No. The plugin only runs when Elementor is active and only processes Button widgets. There are no database queries or external requests.
@@ -60,9 +60,13 @@ No, this plugin specifically enhances Elementor Button widgets.
 
 == Changelog ==
 
+= 1.0.2 =
+* Fix: Controls now appear on the Content tab (fixes hook targeting non-existent section)
+* Update tab references in documentation
+
 = 1.0.0 =
 * Initial release
-* Add "Button SEO & Accessibility" section to Elementor Button Advanced tab
+* Add "Button SEO & Accessibility" section to Elementor Button widget
 * ARIA label support with auto-fallback from button text
 * Link title attribute support with auto-population option
 * Schema.org JSON-LD structured data (10 action types, 7 object types)

@@ -37,7 +37,7 @@ class Button_SEO {
 	];
 
 	public function __construct() {
-		add_action( 'elementor/element/button/_section_responsive/after_section_end', [ $this, 'register_controls' ], 10, 2 );
+		add_action( 'elementor/element/button/section_button/after_section_end', [ $this, 'register_controls' ], 10, 2 );
 		add_action( 'elementor/widget/before_render_content', [ $this, 'render_attributes' ], 10, 1 );
 		add_action( 'elementor/widget/before_render_content', [ $this, 'render_schema' ], 20, 1 );
 	}
@@ -47,7 +47,7 @@ class Button_SEO {
 			'section_button_seo',
 			[
 				'label' => __( 'Button SEO & Accessibility', 'elementor-button-seo' ),
-				'tab'   => Controls_Manager::TAB_ADVANCED,
+				'tab'   => Controls_Manager::TAB_CONTENT,
 			]
 		);
 

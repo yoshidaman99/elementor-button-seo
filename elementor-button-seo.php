@@ -3,7 +3,7 @@
  * Plugin Name: Elementor Button SEO
  * Plugin URI: https://github.com/yoshidaman99/elementor-button-seo
  * Description: Adds SEO and accessibility enhancements to Elementor Button widgets — Schema.org JSON-LD, aria-label, and title attributes to fix "Links do not have descriptive text" audit issues.
- * Version: 1.0.0
+ * Version: 1.0.2
  * Requires at least: 5.9
  * Requires PHP: 7.4
  * Author: yoshidaman99
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'ELEMENTOR_BUTTON_SEO_VERSION', '1.0.0' );
+define( 'ELEMENTOR_BUTTON_SEO_VERSION', '1.0.2' );
 define( 'ELEMENTOR_BUTTON_SEO_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ELEMENTOR_BUTTON_SEO_URL', plugin_dir_url( __FILE__ ) );
 define( 'ELEMENTOR_BUTTON_SEO_BASENAME', plugin_basename( __FILE__ ) );
